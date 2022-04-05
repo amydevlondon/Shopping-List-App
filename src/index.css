@@ -94,10 +94,11 @@ button.submit:hover {
 	margin: 3rem 0rem 2rem;
 }
 .shopping-item {
-	margin: 1rem 0;
+	margin: 1rem 1rem;
 	text-transform: capitalize;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .shopping-item:hover {
 	background-color: hsl(var(--hue), 50%, 95%);
