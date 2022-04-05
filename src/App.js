@@ -14,7 +14,7 @@ const getLocalStorage = () => {
     }
 };
 
-export const App = () => {
+const App = () => {
     const [item, setItem] = useState('');
     const [list, setList] = useState(getLocalStorage());
     const [isEditing, setIsEditing] = useState(false);
@@ -39,6 +39,8 @@ export const App = () => {
             setEditID(null);
             setIsEditing(false);
             showAlert(true, 'item updated', 'success');
+        } else if (item.length > 25) {
+            showAlert(true, 'value length too long', 'danger');
         } else {
             showAlert(true, "item added", "success");
             const newItem = { id: Math.floor(Math.random() * 1000), title: item };
