@@ -32,6 +32,9 @@ body {
 	font-size: var(--font-size);
 	letter-spacing: .1rem;
 }
+main {
+	padding: 4rem 0;
+}
 button {
 	cursor: pointer;
 	text-transform: capitalize;
@@ -145,5 +148,6 @@ button.clear {
 		width: 90vw;
 		max-width: 28rem;
 		padding: 4rem 2rem;
+		margin: 2rem;
 	}
 }
